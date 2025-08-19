@@ -1,0 +1,117 @@
+/* Custom styles for react-date-range Calendar */
+
+/* Override default calendar styles */
+.datePickerDropdown :global(.rdrCalendarWrapper) {
+  background: white;
+  border-radius: 12px;
+  box-shadow: none;
+  border: none;
+  font-family: inherit;
+}
+
+.datePickerDropdown :global(.rdrMonth) {
+  padding: 16px;
+}
+
+.datePickerDropdown :global(.rdrMonthAndYearWrapper) {
+  background: transparent;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.datePickerDropdown :global(.rdrMonthAndYearPickers) {
+  font-weight: 600;
+  color: #1e3a5f;
+}
+
+.datePickerDropdown :global(.rdrNextPrevButton) {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+  transition: all 0.2s ease;
+}
+
+.datePickerDropdown :global(.rdrNextPrevButton:hover) {
+  background: #40e0d0;
+  border-color: #40e0d0;
+  color: white;
+}
+
+.datePickerDropdown :global(.rdrWeekDays) {
+  margin-bottom: 8px;
+}
+
+.datePickerDropdown :global(.rdrWeekDay) {
+  color: #6b7280;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.datePickerDropdown :global(.rdrDays) {
+  gap: 2px;
+}
+
+.datePickerDropdown :global(.rdrDay) {
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.datePickerDropdown :global(.rdrDayNumber) {
+  font-weight: 500;
+  color: #374151;
+}
+
+.datePickerDropdown :global(.rdrDayToday .rdrDayNumber:after) {
+  background: #40e0d0;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  bottom: 2px;
+}
+
+.datePickerDropdown :global(.rdrDayActive) {
+  background: #40e0d0 !important;
+  border-radius: 8px;
+}
+
+.datePickerDropdown :global(.rdrDayActive .rdrDayNumber) {
+  color: white !important;
+  font-weight: 600;
+}
+
+.datePickerDropdown :global(.rdrDayHovered) {
+  background: #f0fdfa;
+  border-radius: 8px;
+}
+
+.datePickerDropdown :global(.rdrDayDisabled) {
+  background: transparent;
+  color: #d1d5db;
+}
+
+.datePickerDropdown :global(.rdrDayDisabled .rdrDayNumber) {
+  color: #d1d5db;
+}
+
+/* Hide range selection elements since we're using single date selection */
+.datePickerDropdown :global(.rdrDayStartPreview),
+.datePickerDropdown :global(.rdrDayEndPreview),
+.datePickerDropdown :global(.rdrDayInPreview) {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .datePickerDropdown :global(.rdrCalendarWrapper) {
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .datePickerDropdown :global(.rdrMonth) {
+    padding: 12px;
+  }
+}

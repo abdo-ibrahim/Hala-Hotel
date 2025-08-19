@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #1e3a5f;
+  --dark-primary: #0a2540;
+  --background: #f9fafb;
+  --highlight: #d4af37;
+  --secondary: #1095c1;
+  --secondary-hover: rgb(16, 149, 193, 0.9);
+}
+@theme {
+  /* Colors */
+  --color-primary: #1e3a5f;
+  --color-dark-primary: #0a2540;
+  --color-background: #f9fafb;
+  --color-highlight: #d4af37;
+  --color-secondary: #1095c1;
+  --color-secondary-hover: rgb(16, 149, 193, 0.9);
+  --color-hover: #c4e3ee;
+
+  /* Fonts */
+  --font-sans: "Inter", "Tajawal", sans-serif;
+  --font-heading: "Poppins", "Cairo", sans-serif;
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--blue) #2a1454;
+}
+
+/* Default (LTR - English) */
+body {
+  font-family: "Inter", "Poppins", sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* RTL (Arabic) */
+[dir="rtl"] body {
+  font-family: "Tajawal", "Cairo", sans-serif;
+  text-align: right;
+}
+
+/* Flex direction based on language */
+[dir="rtl"] .flex-row {
+  flex-direction: row-reverse;
+}
+[dir="ltr"] .flex-row {
+  flex-direction: row;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", "Cairo", sans-serif;
+}
+
+/* Body text */
+p,
+span,
+li,
+a,
+button {
+  font-family: "Inter", "Tajawal", sans-serif;
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Floating label RTL support */
+[dir="rtl"] .peer-placeholder-shown\:scale-100:placeholder-shown {
+  transform-origin: right;
+}
+
+[dir="rtl"] .peer-focus\:scale-75:focus ~ label,
+[dir="rtl"] .peer-\[\:not\(\:placeholder-shown\)\]\:scale-75:not(:placeholder-shown) ~ label {
+  transform-origin: right;
+  right: 0.75rem;
+  left: auto;
+}
+
+[dir="rtl"] label[class*="!left-3"] {
+  right: 0.75rem !important;
+  left: auto !important;
+}
+

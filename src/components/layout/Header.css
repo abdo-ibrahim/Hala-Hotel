@@ -1,0 +1,72 @@
+.fill {
+  padding: 8px 0px;
+  position: relative;
+  z-index: 1;
+}
+.fill::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid var(--color-primary);
+  transition: width 0.2s linear;
+  z-index: -1;
+}
+.fill:hover::before {
+  width: 100%;
+}
+
+/* Dropdown animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+/* Navigation hover effects */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--highlight);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* Fixed header styles */
+header {
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+header.scrolled {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* RTL support for dropdowns */
+[dir="rtl"] .dropdown-menu {
+  left: auto;
+  right: 0;
+}

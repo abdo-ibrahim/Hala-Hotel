@@ -1,0 +1,147 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Our Services",
+    "contact": "Contact Us",
+    "switchLanguage": "عربي",
+    "login": "Login",
+    "register": "Subscribe",
+    "logout": "Logout",
+    "aboutHala": "About us",
+    "careers": "Careers",
+    "news": "News"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Enter your credentials to continue",
+      "email": "Email Address",
+      "password": "Password",
+      "forgotPassword": "Forgot Password?",
+      "loginButton": "Sign In",
+      "or": "Or",
+      "googleLogin": "Sign in with Google",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up now"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Fill out the form to get started",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "countryCode": "Country Code",
+      "dateOfBirth": "Date of Birth",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "termsAgree": "I agree to the Terms & Conditions",
+      "registerButton": "Create Account",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in"
+    },
+    "forgotPassword": {
+      "title": "Forgot Password",
+      "subtitle": "Enter your email to receive a password reset link",
+      "email": "Email Address",
+      "sendButton": "Send Reset Link",
+      "instructions": "We will send you an email with instructions on how to reset your password.",
+      "backToLogin": "Back to Login"
+    },
+    "resetPassword": {
+      "title": "Reset Password",
+      "subtitle": "Enter your new password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "resetButton": "Reset Password",
+      "successTitle": "Password Reset Successful",
+      "successMessage": "Your password has been reset successfully. You can now login with your new password.",
+      "backToLogin": "Back to Login"
+    },
+    "validation": {
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email address",
+      "passwordLength": "Password must be at least 8 characters",
+      "passwordMatch": "Passwords do not match",
+      "termsRequired": "You must agree to the terms & conditions",
+      "invalidPhone": "Please enter a valid phone number"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Future of Living",
+      "subtitle": "Experience luxury and comfort in our premium hotel accommodations",
+      "cta": "Explore Now"
+    },
+    "search": {
+      "checkIn": "Check-in Date",
+      "checkOut": "Check-out Date",
+      "guests": "Guests",
+      "searchButton": "Search",
+      "guestsLabel": "Number of Guests"
+    },
+    "gallery": {
+      "title": "Explore Our Hotel",
+      "subtitle": "Discover the finest amenities and spaces designed for your comfort",
+      "places": {
+        "lobby": "Grand Lobby",
+        "restaurant": "Fine Dining Restaurant",
+        "spa": "Luxury Spa & Wellness",
+        "pool": "Infinity Pool",
+        "gym": "Fitness Center",
+        "rooms": "Premium Suites",
+        "conference": "Conference Halls",
+        "garden": "Garden Terrace"
+      }
+    },
+    "promo": {
+      "title": "Luxury Redefined",
+      "subtitle": "Experience Unmatched Comfort",
+      "description": "Immerse yourself in a world of luxury where every detail is crafted to perfection. Our premium accommodations offer state-of-the-art amenities, breathtaking views, and personalized service that exceeds expectations.",
+      "features": ["24/7 Concierge Service", "Premium Room Amenities", "World-Class Dining", "Spa & Wellness Center"],
+      "watchVideo": "Watch Experience Video"
+    },
+    "digital": {
+      "title": "Comprehensive Digital Experience",
+      "subtitle": "Everything you need at your fingertips",
+      "description": "Our digital platform provides seamless booking and management of your stay, ensuring a hassle-free experience from reservation to checkout.",
+      "features": {
+        "booking": {
+          "title": "Easy Booking & Management",
+          "description": "Book your perfect stay and manage all your reservations in one place"
+        },
+        "checkin": {
+          "title": "Digital Check-in & Check-out",
+          "description": "Skip the lines with our contactless check-in and check-out process"
+        },
+        "trips": {
+          "title": "View Upcoming Trips",
+          "description": "Keep track of all your upcoming reservations and travel plans"
+        },
+        "support": {
+          "title": "24/7 Customer Support",
+          "description": "Get instant help and support whenever you need it"
+        }
+      }
+    }
+  },
+  "footer": {
+    "logo": {
+      "description": "Imagining the future of living with premium accommodations in the world's most vibrant neighborhoods."
+    },
+    "social": {
+      "whatsapp": "Contact us on WhatsApp",
+      "email": "Send us an email"
+    },
+    "navigation": {
+      "title": "Quick Links"
+    },
+    "legal": {
+      "title": "Legal",
+      "terms": "Terms and Conditions",
+      "privacy": "Privacy Policy"
+    },
+    "copyright": "All rights reserved."
+  }
+}
