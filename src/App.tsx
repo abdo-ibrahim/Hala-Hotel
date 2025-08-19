@@ -32,7 +32,7 @@ function App() {
     // Add loading screen timeout
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 100);
+    }, 2000);
     return () => clearTimeout(timer);
   }, [i18n.language]);
 
