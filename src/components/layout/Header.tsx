@@ -7,7 +7,7 @@ import MobileMenu from "./MobileMenu";
 import { TbMenu2, TbWorld } from "react-icons/tb";
 import { FaBook, FaBriefcase, FaNewspaper } from "react-icons/fa";
 import i18n from "../../i18n";
-import "./header.css";
+import "./Header.css";
 
 const Header = () => {
   const { t } = useTranslation();
